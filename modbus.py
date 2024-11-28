@@ -28,7 +28,7 @@ def handle_modbus_request(request, config):
                     transaction_id +
                     protocol_id +
                     struct.pack(">H", 3) +
-                    bytes([unit_id, 0x83, 2])  # Endereço inválido
+                    bytes([unit_id, 0x83, 2]) 
                 )
             response_data += struct.pack(">H", value)
 
